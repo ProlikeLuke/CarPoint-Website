@@ -1,0 +1,203 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+@font-face {
+    font-family: PopLight;
+    src: url(./Poppins/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: PopRegular;
+    src: url(./Poppins/Poppins-Regular.ttf);
+}
+body{
+    font-family: PopLight;
+}
+.portofolio{
+    color:white;
+    background: radial-gradient(rgb(235, 128, 56),rgb(211, 209, 209))
+}
+nav{
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px ;
+}
+.logo{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-decoration:underline;
+}
+.page{
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+}
+.hero{
+    overflow: hidden;
+    height: 500px;
+    align-self: center;
+    justify-self: center;
+}
+.details{
+    grid-column: 2/3;
+    align-self: end;
+    color: rgb(255, 255, 255);
+}
+.details h1{
+    font-family: PopRegular;
+}
+.details h2{
+    padding:10px 0px;
+}
+.pages{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.pages > div{
+    display: flex;
+    align-items: center;   
+    justify-content: space-between;
+}
+.pages h3{
+    font-size: 24px;
+    padding: 30px;
+}
+.pages svg{
+    cursor: pointer;
+    opacity: 0.5;  
+    transform:scale(2);
+}
+.pages svg:hover{
+    animation: dot 0.5s ease-in-out infinite alternate;
+}
+.pages svg.active {
+    opacity: 1;
+}
+@keyframes dot{
+    0%{
+        transform: scale (2)
+    }
+    100%{
+        transform: scale(3.5);
+    }
+}
+
+
+
+
+
+.Layer0{
+    background: radial-gradient(rgb(255, 255, 255),rgb(68, 68, 68))
+}
+.banner{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+.banner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.author{
+    position:absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.author h1{
+    font-size: 42px;
+}
+.author h3{
+    padding: 10px 0px;
+    font-size: 32px;
+}
+.story,.my-work{
+    display: flex;
+    justify-self: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 70px 240px;
+}
+.story-description,.work-description{
+    width: 50%;
+}
+.story-description, .work-description{
+    font-size: 36px;
+    padding-bottom: 30px;
+}
+.story-description p, .work-description p{
+    padding: 20px 0px;
+    font-size: 20px;
+}
+.work-gallery{
+    display:grid;
+    grid-template-columns: repeat(2, 240px);
+}
+
+
+
+
+
+.Layer1{
+    background: radial-gradient(rgb(255, 255, 255),rgb(68, 68, 68))
+}
+.banner1{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+.banner1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.author1{
+    position:absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.author1 h1{
+    font-size: 42px;
+}
+.author1 h3{
+    padding: 10px 0px;
+    font-size: 32px;
+}
+.Impressum {
+    display: flex;
+    justify-self: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 70px 240px;
+}
+.Impressumstext {
+    width: 50%;
+}
+.Impressumstext{
+    font-size: 36px;
+    padding-bottom: 30px;
+}
+.Impressumstext p {
+    padding: 10px 0px;
+    font-size: 20px;
+}
+.Impressumstext h6 {
+    padding: 5px
+}
