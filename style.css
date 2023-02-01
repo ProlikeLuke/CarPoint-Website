@@ -16,7 +16,7 @@ body{
 }
 .portofolio{
     color:white;
-    background: radial-gradient(rgb(235, 128, 56),rgb(211, 209, 209))
+    background: radial-gradient(rgb(105, 105, 105),rgb(59, 59, 59))
 }
 nav{
     min-height: 10vh;
@@ -27,75 +27,36 @@ nav{
     align-items: center;
     padding: 20px 0px ;
 }
-.logo{
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-    text-decoration:underline;
-}
-.page{
-    min-height: 90vh;
-    display: grid;
-    grid-template-columns: 5% 1fr 1fr 1fr 5%;
-}
-.hero{
+.topnav {
+    background-color: #E48B3D;
     overflow: hidden;
-    height: 500px;
-    align-self: center;
-    justify-self: center;
 }
-.details{
-    grid-column: 2/3;
-    align-self: end;
-    color: rgb(255, 255, 255);
+
+.topnav a{
+  float: right;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
-.details h1{
-    font-family: PopRegular;
+
+
+.topnav a:hover{
+  background-color: #ffffff;
+  color: #C95E00;
 }
-.details h2{
-    padding:10px 0px;
-}
-.pages{
-    position: absolute;
-    right: 5%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.pages > div{
-    display: flex;
-    align-items: center;   
-    justify-content: space-between;
-}
-.pages h3{
-    font-size: 24px;
-    padding: 30px;
-}
-.pages svg{
-    cursor: pointer;
-    opacity: 0.5;  
-    transform:scale(2);
-}
-.pages svg:hover{
-    animation: dot 0.5s ease-in-out infinite alternate;
-}
-.pages svg.active {
-    opacity: 1;
-}
-@keyframes dot{
-    0%{
-        transform: scale (2)
-    }
-    100%{
-        transform: scale(3.5);
-    }
+
+
+.topnav a.active{
+  background-color: #ffffff;
+  color: #C95E00;
 }
 
 
 
 
 
-.Layer0{
-    background: radial-gradient(rgb(255, 255, 255),rgb(68, 68, 68))
-}
 .banner{
     height: 50vh;
     width: 100%;
@@ -123,6 +84,23 @@ nav{
     padding: 10px 0px;
     font-size: 32px;
 }
+.DL{
+    display: flex;
+    justify-self: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 70px 70px;
+}
+.DL-description{
+    width: 50%;
+    font-size: 20px;
+    padding: 0px 20px;
+    padding-bottom: 30px;
+}
+.DL-description p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .story,.my-work{
     display: flex;
     justify-self: space-between;
@@ -135,6 +113,7 @@ nav{
 }
 .story-description, .work-description{
     font-size: 36px;
+    padding: 0px 20px;
     padding-bottom: 30px;
 }
 .story-description p, .work-description p{
@@ -187,9 +166,6 @@ nav{
 
 
 
-.Layer1{
-    background: radial-gradient(rgb(255, 255, 255),rgb(68, 68, 68))
-}
 .banner1{
     height: 50vh;
     width: 100%;
@@ -210,8 +186,8 @@ nav{
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     text-align: center;
 }
-.author1 h1{
-    font-size: 42px;
+.authorKontakt p{
+    padding: 5px;
 }
 .author1 h3{
     padding: 10px 0px;
@@ -243,5 +219,83 @@ nav{
     justify-self: space-between;
     width: 90%;
     margin: auto;
-    padding: 70px 240px;
+    padding: 70px 70px;
 }
+.profileÜberUns{
+    padding-top: 120px;
+}
+.profile{
+    padding-right: 30px;
+    padding-top: 100px;
+}
+.profileKontakt{
+    padding-top: 40px;
+}
+
+
+
+
+
+{box-sizing: border-box;}
+
+  .container {
+    position: relative;
+  }
+  .mySlides {
+    display: none;
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
