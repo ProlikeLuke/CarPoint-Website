@@ -41,7 +41,6 @@ nav{
   font-size: 17px;
 }
 
-
 .topnav a:hover{
   background-color: #ffffff;
   color: #C95E00;
@@ -52,7 +51,6 @@ nav{
   background-color: #ffffff;
   color: #C95E00;
 }
-
 
 
 
@@ -93,13 +91,14 @@ nav{
 }
 .DL-description{
     width: 50%;
-    font-size: 20px;
     padding: 0px 20px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
+    font-size: 36px;
 }
 .DL-description p {
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size: 18px;
 }
 .story,.my-work{
     display: flex;
@@ -231,8 +230,9 @@ nav{
 .profileKontakt{
     padding-top: 40px;
 }
-
-
+.profileDL{
+    padding: 240px 10px;
+}
 
 
 
