@@ -156,7 +156,7 @@ nav{
         height: auto;
     }
     .hero img{
-        height: 300px;
+        width: 500px;
     }
     .details{
         grid-row: 2/3;
